@@ -1,10 +1,18 @@
-import React from "react";
+import React, {useContext} from "react";
+import { RyanContext } from "../../Contexts/RyanContext";
+import AlbumDisplay from "../../Components/AlbumDisplay";
 
 
 const AlbumInfo = () => {
 
+  const { albums, singleAlbum } = useContext(RyanContext)
+
+  console.log(singleAlbum)
+
   return (
-    <h1>Im working</h1>
+    <section>
+      <AlbumDisplay albums={albums}  />
+    </section>
   )
 }
 

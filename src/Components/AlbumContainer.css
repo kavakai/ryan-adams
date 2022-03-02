@@ -1,5 +1,5 @@
 .cover-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  overflow: scroll;
+  overflow-y: auto;
 }

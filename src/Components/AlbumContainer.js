@@ -5,7 +5,6 @@ import "./AlbumContainer.css"
 
 
 const AlbumContainer = ({ albums }) => {
-  console.log(albums, 'in container')
 
   const covers = albums.map(album => {
     return (

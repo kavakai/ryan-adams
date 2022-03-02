@@ -7,6 +7,17 @@
 
 .nav{
   border: solid 1px red;
-  height: 10px;
+  display: flex;
+  height: 10%;
+}
+
+.nav > h1 {
+  justify-self: flex-end;
+  align-self: center;
+  color: whitesmoke;
+}
+
+.main {
+  margin-top: 3%;
 }
 

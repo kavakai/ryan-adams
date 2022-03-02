@@ -9,16 +9,15 @@ const Home = () => {
 
   const { albums, ryanData, loading, setLoading } = useContext(RyanContext)
 
-console.log(loading)
 
   return (
     <section className="body">
       <header className='nav'>
         <Nav />
+      </header>
         <main className='main'>  
           {!loading && <AlbumContainer albums={albums} />}
         </main>
-      </header>
     </section>
   )
 }
