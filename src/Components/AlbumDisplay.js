@@ -1,9 +1,31 @@
 import React from "react";
 
-const AlbumDisplay = ({ info, id }) => {
+const AlbumDisplay = ({ singleAlbum }) => {
+
+  const getTracks = () => {
+    return singleAlbum.tracks.map((track, index) => {
+      return (
+        <div key={index}>
+          <p>{track.title}: {track.length}</p>
+        </div>
+      )
+    })
+  }
 
   return (
-    <h1>Hello Album</h1>
+    <>
+      <article>
+        <img src={singleAlbum.image} />
+        <p>Released: {singleAlbum.releaseDate}</p>
+      </article>
+      <article>
+        <h2>"{singleAlbum.title}"</h2>
+        <p>{singleAlbum.description}</p>
+      </article>
+      <article>
+        <>{getTracks()}</>
+      </article>
+    </>
   )
 }
 
