@@ -1,8 +1,7 @@
 export const getRyan = () => {
   return fetch("http://localhost:4020/")
     .then(response => checkResponse(response))
-    
-}
+};
 
 const checkResponse = (response) => {
     if (!response.ok) {
