@@ -1,14 +1,12 @@
 import React, { useEffect } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import { getRyan } from './ApiCalls';
+import RyanProvider from './Contexts/RyanContext';
 import Home from './Pages/Home/Home';
 import './cssReset.css'
 import './App.css';
-import RyanProvider from './Contexts/RyanContext';
 
 const App = () => {
-  
-
   return (
     <RyanProvider>
       <div className="App">

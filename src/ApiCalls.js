@@ -11,4 +11,4 @@ const checkResponse = (response) => {
     }
 };
 
-export default getRyan
+export { getRyan }

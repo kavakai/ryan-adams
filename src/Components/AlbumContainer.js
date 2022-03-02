@@ -3,7 +3,7 @@ import AlbumCard from "./AlbumCard";
 
 
 
-const AlbumContainer = (albums) => {
+const AlbumContainer = ({ albums }) => {
   console.log(albums, 'in container')
 
   const covers = albums.map(album => {

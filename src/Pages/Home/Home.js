@@ -6,15 +6,15 @@ import { RyanContext } from "../../Contexts/RyanContext";
 
 const Home = () => {
 
-    const {albums, ryanData} = useContext(RyanContext)
+  const { albums, ryanData, loading, setLoading } = useContext(RyanContext)
 
-  console.log(albums)
+console.log(loading)
 
   return (
     <header>
       <Nav />
       <main>  
-        <AlbumContainer albums={albums}/>
+        {!loading && <AlbumContainer albums={albums} />}
       </main>
     </header>
   )
