@@ -3,6 +3,7 @@ import { getRyan } from "../../ApiCalls";
 import Nav from "../../Components/Nav";
 import AlbumContainer from "../../Components/AlbumContainer";
 import { RyanContext } from "../../Contexts/RyanContext";
+import "./Home.css"
 
 const Home = () => {
 
@@ -11,12 +12,14 @@ const Home = () => {
 console.log(loading)
 
   return (
-    <header>
-      <Nav />
-      <main>  
-        {!loading && <AlbumContainer albums={albums} />}
-      </main>
-    </header>
+    <section className="body">
+      <header className='nav'>
+        <Nav />
+        <main className='main'>  
+          {!loading && <AlbumContainer albums={albums} />}
+        </main>
+      </header>
+    </section>
   )
 }
 

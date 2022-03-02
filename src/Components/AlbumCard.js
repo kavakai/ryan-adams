@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AlbumCard = ({id, cover}) => {
   
   return (
-    <article>
+    <Link to="/album" className="cover-link">
       <img src={cover} id={id}/>
-    </article>
+    </Link>
   )
 }
 

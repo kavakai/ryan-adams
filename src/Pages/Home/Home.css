@@ -1,0 +1,12 @@
+.body{
+  height: 100vh;
+  background-image: url('../../Assets/Arcade.jpg');
+  background-size: contain;
+  overflow: hidden;
+}
+
+.nav{
+  border: solid 1px red;
+  height: 10px;
+}
+
