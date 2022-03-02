@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
+import { getRyan } from './ApiCalls';
 import './App.css';
 
-function App() {
+const App = () => {
+
+  useEffect = () => {
+    getRyan()
+    .then(data => console.log(data, "data"))
+  }
+
   return (
     <div className="App">
       <Switch>
