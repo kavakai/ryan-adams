@@ -12,9 +12,9 @@ const Home = () => {
 
   return (
     <section className="body">
-      <header className='nav'>
+      <nav className='nav'>
         <Nav />
-      </header>
+      </nav>
         <main className='main'>  
           {!loading && <AlbumContainer albums={albums} />}
         </main>

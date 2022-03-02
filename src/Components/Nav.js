@@ -12,7 +12,7 @@ const Nav = () => {
     <>
       <button onClick={toggle}>Open</button>
       <div className="menu">{active && <BurgerMenu />}</div>
-      <h1>Ryan Adams</h1>
+      <h1 className="page-title">Ryan Adams</h1>
     </>
   )
 }

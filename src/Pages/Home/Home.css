@@ -11,13 +11,9 @@
   height: 10%;
 }
 
-.nav > h1 {
-  justify-self: flex-end;
-  align-self: center;
-  color: whitesmoke;
-}
-
 .main {
   margin-top: 3%;
+  overflow: scroll;
+  height: 100%;
 }
 
