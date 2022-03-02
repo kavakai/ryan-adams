@@ -1,22 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { getRyan } from "../../ApiCalls";
 import Nav from "../../Components/Nav";
+import AlbumContainer from "../../Components/AlbumContainer";
+import { RyanContext } from "../../Contexts/RyanContext";
 
 const Home = () => {
 
-  const [ryanData, setRyanData] = useState({});
+    const {albums, ryanData} = useContext(RyanContext)
 
-  useEffect(() => {
-    getRyan()
-      .then(data => setRyanData(data))
-      .catch(err => console.log(err))
-  })
+  console.log(albums)
 
   return (
     <header>
       <Nav />
       <main>  
-        {/* <AlbumContainer /> */}
+        <AlbumContainer albums={albums}/>
       </main>
     </header>
   )
