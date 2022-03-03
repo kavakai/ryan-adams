@@ -8,6 +8,7 @@ const RyanProvider = (props) => {
   const [ryanData, setRyanData] = useState({});
   const [albums, setAlbums] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [singleAlbum, setSingleAlbum] = useState({})
 
   useEffect(() => {
       getRyan()
@@ -26,7 +27,7 @@ const RyanProvider = (props) => {
     }
   }, [albums])
   
-  const values =  { albums, setAlbums, ryanData, setRyanData, loading, setLoading }
+  const values =  { albums, setAlbums, ryanData, setRyanData, loading, setLoading, singleAlbum, setSingleAlbum }
   
 
   return (

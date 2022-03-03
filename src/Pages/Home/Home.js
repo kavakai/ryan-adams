@@ -3,20 +3,22 @@ import { getRyan } from "../../ApiCalls";
 import Nav from "../../Components/Nav";
 import AlbumContainer from "../../Components/AlbumContainer";
 import { RyanContext } from "../../Contexts/RyanContext";
+import "./Home.css"
 
 const Home = () => {
 
   const { albums, ryanData, loading, setLoading } = useContext(RyanContext)
 
-console.log(loading)
 
   return (
-    <header>
-      <Nav />
-      <main>  
-        {!loading && <AlbumContainer albums={albums} />}
-      </main>
-    </header>
+    <section className="body">
+      <nav className='nav'>
+        <Nav />
+      </nav>
+        <main className='main'>  
+          {!loading && <AlbumContainer albums={albums} />}
+        </main>
+    </section>
   )
 }
 

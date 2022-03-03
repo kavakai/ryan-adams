@@ -1,10 +1,10 @@
 import React from "react";
 import AlbumCard from "./AlbumCard";
+import "./AlbumContainer.css"
 
 
 
 const AlbumContainer = ({ albums }) => {
-  console.log(albums, 'in container')
 
   const covers = albums.map(album => {
     return (
@@ -17,7 +17,7 @@ const AlbumContainer = ({ albums }) => {
   })
   
   return (
-    <section>
+    <section className='cover-container'>
       {covers}
     </section>
     

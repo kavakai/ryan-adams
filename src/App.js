@@ -3,6 +3,7 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 import { getRyan } from './ApiCalls';
 import RyanProvider from './Contexts/RyanContext';
 import Home from './Pages/Home/Home';
+import AlbumInfo from './Pages/AlbumInfo/AlbumInfo';
 import './cssReset.css'
 import './App.css';
 
@@ -12,10 +13,10 @@ const App = () => {
       <div className="App">
         <Switch>
           <Route exact path="/" component={Home}/>
-          {/* <Route exact path="/album" component={SingleAlbum}/>
-          <Route exact path="/playlist" component={Playlist}/>
-          <Route exact path="/about" component={About}/>
-        <Redirect to="/error"/> */}
+          <Route exact path="/album" component={AlbumInfo}/>
+          {/* <Route exact path="/playlist" component={Playlist}/> */}
+          {/* <Route exact path="/about" component={About}/> */}
+        <Redirect to="/error"/>
         </Switch>
       </div>
     </RyanProvider>
