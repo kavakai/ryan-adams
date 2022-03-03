@@ -1,9 +1,10 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { RyanContext } from "../Contexts/RyanContext";
 import "./AlbumDisplay.css"
 
 const AlbumDisplay = ({ singleAlbum, setPlaylist, albums, playlist }) => {
 
+  const [message, setMessage] = useState('');
 
   const getTracks = () => {
     return singleAlbum.tracks.map((track, index) => {
@@ -18,6 +19,7 @@ const AlbumDisplay = ({ singleAlbum, setPlaylist, albums, playlist }) => {
   const handleClick = (id) => {
     const playlistAlbum = albums.find(album => album.id === id)
     setPlaylist([...playlist, playlistAlbum])
+    setMessage("You have added this album to your playlist")
     console.log(playlist, 'playlist')
   }
 
@@ -30,7 +32,9 @@ const AlbumDisplay = ({ singleAlbum, setPlaylist, albums, playlist }) => {
       <article className="description">
         <h2>"{singleAlbum.title}"</h2>
         <p>{singleAlbum.description}</p>
-        <button className="add-playlist-btn" onClick={() => handleClick(singleAlbum.id)}>Add to Playlist</button>
+        {message ?
+          <h3>{message}</h3> :
+          <button className="add-playlist-btn" onClick={() => handleClick(singleAlbum.id)}>Add to Playlist</button>}
       </article>
       <article className="tracks">
         <>{getTracks()}</>
