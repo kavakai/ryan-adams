@@ -1,6 +1,7 @@
 import React, { useContext } from "react"
 import { RyanContext } from "../../Contexts/RyanContext"
 import AlbumContainer from "../../Components/AlbumContainer"
+import PlaylistContainer from "../../Components/PlaylistContainer"
 
 const Playlist = () => {
 
@@ -8,7 +9,7 @@ const Playlist = () => {
 
   return (
     <main className='main'>  
-      <AlbumContainer albums={playlist} />
+      <PlaylistContainer albums={playlist} />
     </main>
   )
 }
