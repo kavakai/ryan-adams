@@ -5,12 +5,7 @@
   overflow: hidden;
 } */
 
-.nav{
-  border: solid 1px red;
-  display: flex;
-  height: 10%;
-  justify-content: flex-end;
-}
+
 
 .main {
   margin-top: 3%;

@@ -1,7 +1,7 @@
 
 
 html {
-  font-family: 'Arvo', sans-serif;
+  font-family: 'Arvo', serif;
 }
 
 body {
@@ -9,4 +9,10 @@ body {
   background-image: url('./Assets/Arcade.jpg');
   background-size: contain;
   overflow: scroll;
+}
+
+.nav{
+  display: flex;
+  height: 10%;
+  justify-content: flex-end;
 }

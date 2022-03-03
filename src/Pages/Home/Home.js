@@ -1,24 +1,17 @@
-import React, { useContext, useEffect, useState } from "react";
-import { getRyan } from "../../ApiCalls";
-import Nav from "../../Components/Nav";
+import React, { useContext } from "react";
 import AlbumContainer from "../../Components/AlbumContainer";
 import { RyanContext } from "../../Contexts/RyanContext";
 import "./Home.css"
 
 const Home = () => {
 
-  const { albums, ryanData, loading, setLoading } = useContext(RyanContext)
+  const { albums, loading } = useContext(RyanContext)
 
-
+  
   return (
-    <section className="body">
-      <nav className='nav'>
-        <Nav />
-      </nav>
-        <main className='main'>  
-          {!loading && <AlbumContainer albums={albums} />}
-        </main>
-    </section>
+    <main className='main'>  
+      {!loading && <AlbumContainer albums={albums} />}
+    </main>
   )
 }
 

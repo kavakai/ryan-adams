@@ -7,18 +7,18 @@ import "./AlbumInfo.css"
 
 const AlbumInfo = () => {
 
-  const { albums, singleAlbum } = useContext(RyanContext)
+  const { albums, playlist, setPlaylist, singleAlbum } = useContext(RyanContext)
 
   
 
   return (
-    <section>
-      <header className='nav'>
-        <Nav />
-      </header>
-      <section className="single-container">
-        <AlbumDisplay singleAlbum={singleAlbum} />
-      </section>
+    <section className="single-container">
+      <AlbumDisplay
+        singleAlbum={singleAlbum}
+        albums={albums}
+        playlist={playlist}
+        setPlaylist={setPlaylist}
+      />
     </section>
   )
 }
