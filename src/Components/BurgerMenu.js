@@ -1,9 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const BurgerMenu = () => {
 
   return (
-    <h2>Im open</h2>
+    <>
+      <Link to="/">Home</Link>
+      <Link to="/playlist">My PLaylist</Link>
+      <Link to="/about">About</Link>
+    </>
   )
 }
 

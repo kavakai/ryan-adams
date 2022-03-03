@@ -21,6 +21,7 @@ const AlbumDisplay = ({ singleAlbum }) => {
       <article>
         <h2>"{singleAlbum.title}"</h2>
         <p>{singleAlbum.description}</p>
+        <button>Add to Playlist</button>
       </article>
       <article>
         <>{getTracks()}</>

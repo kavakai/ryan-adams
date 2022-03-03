@@ -1,0 +1,12 @@
+
+
+html {
+  font-family: 'Arvo', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-image: url('./Assets/Arcade.jpg');
+  background-size: contain;
+  overflow: scroll;
+}

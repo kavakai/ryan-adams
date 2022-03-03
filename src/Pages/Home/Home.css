@@ -1,19 +1,20 @@
-.body{
+/* .body{
   height: 100vh;
   background-image: url('../../Assets/Arcade.jpg');
   background-size: contain;
   overflow: hidden;
-}
+} */
 
 .nav{
   border: solid 1px red;
   display: flex;
   height: 10%;
+  justify-content: flex-end;
 }
 
 .main {
   margin-top: 3%;
-  overflow: scroll;
   height: 100%;
+  overflow: scroll;
 }
 

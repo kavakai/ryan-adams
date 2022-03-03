@@ -1,22 +1,25 @@
-import React, { useContext} from "react";
-import { Link } from "react-router-dom";
+import React, { useContext } from "react";
+import { Link, useHistory } from "react-router-dom";
 import { RyanContext } from "../Contexts/RyanContext";
 import "./AlbumCard.css"
 
 
 const AlbumCard = ({id, cover}) => {
   
-  const { albums, setSingleAlbum } = useContext(RyanContext)
+  const { albums, setSingleAlbum } = useContext(RyanContext);
+
+  const history = useHistory();
 
   const handleClick = (id) => {
     const albumInfo = albums.find(album => album.id === id)
     setSingleAlbum(albumInfo)
+    history.push("/album")
   }
 
   return (
-    <Link to="/album" className="cover-link" onClick={() => handleClick(id)}>
+    <button className="cover-link" onClick={() => handleClick(id)}>
       <img src={cover} id={id}/>
-    </Link>
+    </button>
   )
 }
 
