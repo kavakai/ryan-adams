@@ -1,12 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import { getRyan } from './ApiCalls';
-import RyanProvider from './Contexts/RyanContext';
+import RyanProvider, { RyanContext } from './Contexts/RyanContext';
 import Home from './Pages/Home/Home';
 import AlbumInfo from './Pages/AlbumInfo/AlbumInfo';
 import About from './Pages/About/About';
 import Playlist from './Pages/Playlist/Playlist';
 import Nav from './Components/Nav';
+import Error from './Pages/Error/Error';
 import './cssReset.css'
 import './App.css';
 
