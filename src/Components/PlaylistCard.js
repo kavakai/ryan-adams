@@ -26,7 +26,7 @@ const PlaylistCard = ({id, cover}) => {
       <button className="cover-link" onClick={() => handleClick(id)}>
         <img className="cover-link vibrate-2" src={cover} alt="album cover image" id={id}/>
       </button>
-      <button onClick={() => remove(id)}>Remove from Playlist</button>
+      <button className="remove-btn" onClick={() => remove(id)}>Remove from Playlist</button>
     </section>
   )
 }

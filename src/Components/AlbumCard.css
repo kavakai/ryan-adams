@@ -11,3 +11,18 @@
   flex-direction: column;
   align-items: center;
 }
+
+.remove-btn {
+  border: solid 2px red;
+  border-radius: 10px;
+  background-color: #55ff00;
+  color: red;
+}
+
+.remove-btn:hover {
+  transform: scale(1.3);
+  border: solid 2px #55ff00;
+  border-radius: 10px;
+  background-color: red;
+  color: #55ff00;
+}
