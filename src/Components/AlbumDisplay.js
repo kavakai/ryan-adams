@@ -17,7 +17,7 @@ const AlbumDisplay = ({ singleAlbum, setPlaylist, albums, playlist }) => {
 
   const handleClick = (id) => {
     const playlistAlbum = albums.find(album => album.id === id)
-    setPlaylist(playlistAlbum)
+    setPlaylist([...playlist, playlistAlbum])
     console.log(playlist, 'playlist')
   }
 
@@ -30,7 +30,7 @@ const AlbumDisplay = ({ singleAlbum, setPlaylist, albums, playlist }) => {
       <article className="description">
         <h2>"{singleAlbum.title}"</h2>
         <p>{singleAlbum.description}</p>
-        <button onClick={() => handleClick(singleAlbum.id)}>Add to Playlist</button>
+        <button className="add-playlist-btn" onClick={() => handleClick(singleAlbum.id)}>Add to Playlist</button>
       </article>
       <article className="tracks">
         <>{getTracks()}</>

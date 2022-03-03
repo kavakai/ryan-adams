@@ -1,22 +1,21 @@
 import React from "react";
-import AlbumCard from "./AlbumCard";
+
 import "./AlbumContainer.css"
+import PlaylistCard from "./PlaylistCard";
 
 
 
-const AlbumContainer = ({ albums }) => {
+const PlaylistContainer = ({ albums }) => {
 
   const covers = albums.map(album => {
     return (
-      <AlbumCard
+      <PlaylistCard
         key={album.id}
         id={album.id}
         cover={album.image}
       />
     )
   })
-
-  // const playlistCovers = playlist.map(album => )
   
   return (
     <section className='cover-container'>
@@ -26,4 +25,4 @@ const AlbumContainer = ({ albums }) => {
   )
 }
 
-export default AlbumContainer
+export default PlaylistContainer
