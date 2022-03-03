@@ -1,4 +1,13 @@
-.cover {
-  height: max-content;
-  background-color: rgb(235, 233, 233, 2);
+.cover, .description, .tracks {
+  height: 70%;
+  background-color: rgba(130, 130, 130, 0.7);
+  border: transparent;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 2%;
+  color: rgb(85, 255, 0);
+  text-shadow: 1px 1px red;
 }

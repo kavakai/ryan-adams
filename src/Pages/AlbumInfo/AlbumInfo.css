@@ -1,5 +1,8 @@
 .single-container {
+  margin-top: 4%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  column-gap: 2%;
   overflow-y: auto;
+  height: 100vh;
 }
