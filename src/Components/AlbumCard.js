@@ -18,7 +18,7 @@ const AlbumCard = ({id, cover}) => {
 
   return (
     <button className="cover-link" onClick={() => handleClick(id)}>
-      <img src={cover} id={id}/>
+      <img className="cover-link" src={cover} id={id}/>
     </button>
   )
 }

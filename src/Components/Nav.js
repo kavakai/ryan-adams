@@ -14,11 +14,13 @@ const Nav = () => {
   }
   return (
     <>
-      <div>
+      <article className="home-button">
         <Link to="/" className="page-title" onClick={() =>setSingleAlbum({}) }>Ryan Adams</Link>
-      </div>
-      <Link to="/playlist" className="page-title" onClick={() => setSingleAlbum({})}>My PLaylist</Link>
-      <Link to="/about" className="page-title" onClick={() => setSingleAlbum({})}>About</Link>
+      </article>
+      <article className="nav-btns">
+        <Link to="/playlist" className="page-title" onClick={() => setSingleAlbum({})}>My PLaylist</Link>
+        <Link to="/about" className="page-title" onClick={() => setSingleAlbum({})}>About</Link>
+      </article>
     </>
   )
 }

@@ -4,3 +4,13 @@
   justify-self: center;
   font-size: xx-large;
 }
+
+.home-button {
+  width: 75%;
+}
+
+.nav-btns {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+}
