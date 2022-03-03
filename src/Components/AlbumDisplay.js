@@ -17,7 +17,7 @@ const AlbumDisplay = ({ singleAlbum, setPlaylist, albums, playlist }) => {
 
   const handleClick = (id) => {
     const playlistAlbum = albums.find(album => album.id === id)
-    setPlaylist(playlistAlbum)
+    setPlaylist([...playlist, playlistAlbum])
     console.log(playlist, 'playlist')
   }
 

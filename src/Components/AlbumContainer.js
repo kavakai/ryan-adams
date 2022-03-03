@@ -15,6 +15,8 @@ const AlbumContainer = ({ albums }) => {
       />
     )
   })
+
+  // const playlistCovers = playlist.map(album => )
   
   return (
     <section className='cover-container'>
