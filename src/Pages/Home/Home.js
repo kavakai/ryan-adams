@@ -7,18 +7,13 @@ import "./Home.css"
 
 const Home = () => {
 
-  const { albums, ryanData, loading, setLoading } = useContext(RyanContext)
+  const { albums, loading } = useContext(RyanContext)
 
 
   return (
-    <section className="body">
-      <nav className='nav'>
-        <Nav />
-      </nav>
-        <main className='main'>  
-          {!loading && <AlbumContainer albums={albums} />}
-        </main>
-    </section>
+    <main className='main'>  
+      {!loading && <AlbumContainer albums={albums} />}
+    </main>
   )
 }
 

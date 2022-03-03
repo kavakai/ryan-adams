@@ -10,3 +10,9 @@ body {
   background-size: contain;
   overflow: scroll;
 }
+
+.nav{
+  display: flex;
+  height: 10%;
+  justify-content: flex-end;
+}

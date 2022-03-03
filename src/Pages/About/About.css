@@ -1,0 +1,23 @@
+.container {
+  display: grid;
+  margin-top: 3%;
+}
+
+.about {
+  
+  height: 75vh;
+  width: 60%;
+  background-color: rgba(130, 130, 130, 0.7);
+  border: transparent;
+  border-radius: 20px;
+  display: grid;
+  align-self: center;
+  justify-self: center;
+  margin-top: 2%;
+  color: rgb(85, 255, 0);
+  text-shadow: 1px 1px red;
+}
+
+.about-content {
+  align-self: center;
+}
