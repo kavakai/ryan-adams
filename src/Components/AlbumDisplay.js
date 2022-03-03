@@ -16,7 +16,7 @@ const AlbumDisplay = ({ singleAlbum }) => {
   return (
     <>
       <article className="cover">
-        <img src={singleAlbum.image} />
+        <img src={singleAlbum.image} alt={`${singleAlbum.title} album cover image`} />
         <p>Released: {singleAlbum.releaseDate}</p>
       </article>
       <article className="description">
