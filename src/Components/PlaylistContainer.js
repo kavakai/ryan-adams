@@ -21,9 +21,9 @@ const PlaylistContainer = ({ albums }) => {
       return covers
     } else {
       return (
-      <>
-        <h2 className="add-statement">Add some albums to you playlist</h2>
-        </>
+      <section className="add-some-container">
+        <h2 className="add-statement">Add some albums and let's start listening</h2>
+      </section>
       )}
   }
 

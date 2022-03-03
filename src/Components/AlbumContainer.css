@@ -9,3 +9,12 @@
   color: rgb(85, 255, 0);
   text-shadow: 1px 1px red;
 }
+
+.add-some-container {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(130, 130, 130, 0.7);
+}
