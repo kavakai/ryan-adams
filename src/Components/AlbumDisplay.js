@@ -20,7 +20,6 @@ const AlbumDisplay = ({ singleAlbum, setPlaylist, albums, playlist }) => {
     const playlistAlbum = albums.find(album => album.id === id)
     setPlaylist([...playlist, playlistAlbum])
     setMessage("You have added this album to your playlist")
-    console.log(playlist, 'playlist')
   }
 
   return (

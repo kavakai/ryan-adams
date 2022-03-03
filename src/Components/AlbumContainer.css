@@ -4,3 +4,8 @@
   row-gap: 2ch;
   overflow-y: auto;
 }
+
+.add-statement {
+  color: rgb(85, 255, 0);
+  text-shadow: 1px 1px red;
+}
