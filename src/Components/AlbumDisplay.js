@@ -14,17 +14,18 @@ const AlbumDisplay = ({ singleAlbum }) => {
 
   return (
     <>
-      <article>
+      <article className="cover">
         <img src={singleAlbum.image} />
         <p>Released: {singleAlbum.releaseDate}</p>
       </article>
-      <article>
+      <article className="description">
         <h2>"{singleAlbum.title}"</h2>
         <p>{singleAlbum.description}</p>
         <button>Add to Playlist</button>
       </article>
-      <article>
+      <article className="tracks">
         <>{getTracks()}</>
+        <p>Total length: {singleAlbum.runtime}</p>
       </article>
     </>
   )
