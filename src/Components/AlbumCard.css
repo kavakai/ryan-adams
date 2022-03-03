@@ -5,3 +5,9 @@
   border: transparent;
   box-shadow: 2px 8px 8px -4px rgb(0, 179, 255);
 }
+
+.playlist-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

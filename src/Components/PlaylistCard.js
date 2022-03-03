@@ -6,7 +6,7 @@ import "./AlbumCard.css"
 
 const PlaylistCard = ({id, cover}) => {
   
-  const { albums, setSingleAlbum } = useContext(RyanContext);
+  const { albums, setSingleAlbum, playlist, setPlaylist } = useContext(RyanContext);
 
   const history = useHistory();
 
@@ -15,14 +15,19 @@ const PlaylistCard = ({id, cover}) => {
     setSingleAlbum(albumInfo)
     history.push("/album")
   }
+
+  const remove = (id) => {
+    const filtered = playlist.filter(album => album.id != id)
+    setPlaylist([...filtered])
+  }
   
   return (
-    <div>
+    <section className="playlist-card">
       <button className="cover-link" onClick={() => handleClick(id)}>
         <img className="cover-link vibrate-2" src={cover} alt="album cover image" id={id}/>
       </button>
-      <button>Remove from Playlist</button>
-    </div>
+      <button onClick={() => remove(id)}>Remove from Playlist</button>
+    </section>
   )
 }
 
