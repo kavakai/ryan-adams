@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import { RyanContext } from "../Contexts/RyanContext";
 import "./AlbumDisplay.css"
 
-const AlbumDisplay = ({ singleAlbum }) => {
+const AlbumDisplay = ({ singleAlbum, setPlaylist, albums, playlist }) => {
+
 
   const getTracks = () => {
     return singleAlbum.tracks.map((track, index) => {
@@ -13,6 +15,12 @@ const AlbumDisplay = ({ singleAlbum }) => {
     })
   }
 
+  const handleClick = (id) => {
+    const playlistAlbum = albums.find(album => album.id === id)
+    setPlaylist(playlistAlbum)
+    console.log(playlist, 'playlist')
+  }
+
   return (
     <>
       <article className="cover">
@@ -22,7 +30,7 @@ const AlbumDisplay = ({ singleAlbum }) => {
       <article className="description">
         <h2>"{singleAlbum.title}"</h2>
         <p>{singleAlbum.description}</p>
-        <button>Add to Playlist</button>
+        <button onClick={() => handleClick(singleAlbum.id)}>Add to Playlist</button>
       </article>
       <article className="tracks">
         <>{getTracks()}</>

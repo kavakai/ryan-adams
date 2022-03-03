@@ -9,12 +9,13 @@ const RyanProvider = (props) => {
   const [albums, setAlbums] = useState([]);
   const [loading, setLoading] = useState(true);
   const [singleAlbum, setSingleAlbum] = useState({})
+  const [playlist, setPlaylist] = useState([])
 
   useEffect(() => {
       getRyan()
       .then(data => setData(data))
       .catch(err => console.log(err))
-  }, [])
+  }, [albums])
 
   const setData = (data) => {
     setRyanData(data);
@@ -27,7 +28,7 @@ const RyanProvider = (props) => {
     }
   }, [albums])
   
-  const values =  { albums, setAlbums, ryanData, setRyanData, loading, setLoading, singleAlbum, setSingleAlbum }
+  const values =  { albums, setAlbums, ryanData, setRyanData, loading, setLoading, singleAlbum, setSingleAlbum, playlist, setPlaylist }
   
 
   return (
