@@ -7,17 +7,18 @@
   
   height: 75vh;
   width: 60%;
-  background-color: rgba(130, 130, 130, 0.7);
+  background-color: rgb(42 42 42 / 75%);
   border: transparent;
   border-radius: 20px;
   display: grid;
   align-self: center;
   justify-self: center;
   margin-top: 2%;
-  color: rgb(85, 255, 0);
-  text-shadow: 1px 1px red;
+  color: red;
+  text-shadow: 0.5px 0.2px whitesmoke;
 }
 
 .about-content {
   align-self: center;
+  line-height: 1.5;
 }
