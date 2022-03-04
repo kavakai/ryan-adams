@@ -11,6 +11,23 @@
   color: red;
   text-shadow: .5px .2px whitesmoke;
   line-height: 1.4;
+  margin: 1em 1em 0 1em;
+}
+
+.scrollbar {
+  overflow: auto;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 4px;
+    height: 8px;
+    background-color: whitesmoke;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: red;
+    width: 10px;
+    height: 2px;
 }
 
 .add-playlist-btn {

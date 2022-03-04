@@ -37,18 +37,18 @@ const AlbumDisplay = ({ singleAlbum, setPlaylist, albums, playlist }) => {
 
   return (
     <>
-      <article className="cover">
+      <article className="cover scrollbar">
         <img src={singleAlbum.image} alt={`${singleAlbum.title} album cover image`} />
         <p>Released: {singleAlbum.releaseDate}</p>
       </article>
-      <article className="description">
+      <article className="description scrollbar">
         <h2>"{singleAlbum.title}"</h2>
         <p>{singleAlbum.description}</p>
         {message ?
           <h3>{message}</h3> :
           <button className="add-playlist-btn" onClick={() => handleClick(singleAlbum.id)}>Add to Playlist</button>}
       </article>
-      <article className="tracks">
+      <article className="tracks scrollbar">
         <>{getTracks()}</>
         <p>Total length: {singleAlbum.runtime}</p>
       </article>
