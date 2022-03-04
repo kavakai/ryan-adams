@@ -6,12 +6,9 @@ import "./Nav.css"
 
 const Nav = () => {
 
-  const [active, setActive] = useState(false)
+  
   const { albums, setSingleAlbum } = useContext(RyanContext);
   
-  const toggle = () => {
-    setActive(!active)
-  }
   return (
     <>
       <article className="home-button">
