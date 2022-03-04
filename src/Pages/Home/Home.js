@@ -11,7 +11,7 @@ const Home = () => {
   const checkError = () => {
     if (error.length) {
       return (
-        <section>
+        <section className="error">
           <Error />
         </section>
       )

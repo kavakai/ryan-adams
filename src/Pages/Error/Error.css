@@ -1,0 +1,15 @@
+.error {
+  height: 70vh;
+  background-color: rgb(42 42 42 / 75%);
+  border: transparent;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 2%;
+  color: red;
+  text-shadow: .5px .2px whitesmoke;
+  line-height: 1.4;
+  margin: 1em 1em 0 1em;
+}

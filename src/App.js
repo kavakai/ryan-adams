@@ -17,15 +17,16 @@ const App = () => {
       <section className="nav">
         <Nav />
       </section>
-        <div className="App">
+        <section className="App">
           <Switch>
             <Route exact path="/" component={Home}/>
             <Route exact path="/album" component={AlbumInfo}/>
             <Route exact path="/playlist" component={Playlist}/>
-            <Route exact path="/about" component={About}/>
-          <Redirect to="/error"/>
+            <Route exact path="/about" component={About} />
+            <Route exact path="/error" component={Error} />
+          <Redirect to="/error" />
           </Switch>
-        </div>
+        </section>
     </RyanProvider>
   );
 }
