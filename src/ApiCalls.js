@@ -1,5 +1,5 @@
 const getRyan = () => {
-  return fetch("http://localhost:4020s/")
+  return fetch("http://localhost:4020/")
     .then(response => checkResponse(response))
 };
 
