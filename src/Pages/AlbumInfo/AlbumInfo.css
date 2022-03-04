@@ -1,8 +1,24 @@
-.single-container {
-  margin-top: 4%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 2%;
-  overflow-y: auto;
-  height: 100vh;
+@media screen and (min-width: 55em) {
+  .single-container {
+    margin-top: 4%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2%;
+    overflow-y: auto;
+    height: 100vh;
+  }
 }
+
+@media screen and (max-width: 54em) {
+  .single-container {
+    margin-top: 4%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1%;
+    overflow-y: auto;
+    height: 100vh;
+  }
+  
+}
+
+
