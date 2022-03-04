@@ -18,7 +18,7 @@ const Nav = () => {
         <Link to="/" className="page-title" onClick={() =>setSingleAlbum({}) }>Ryan Adams</Link>
       </article>
       <article className="nav-btns">
-        <Link to="/playlist" className="page-title" onClick={() => setSingleAlbum({})}>My PLaylist</Link>
+        <Link to="/playlist" className="page-title" onClick={() => setSingleAlbum({})}>My Playlist</Link>
         <Link to="/about" className="page-title" onClick={() => setSingleAlbum({})}>About</Link>
       </article>
     </>
