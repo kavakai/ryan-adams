@@ -3,11 +3,16 @@
   color: red;
   justify-self: center;
   font-size: xx-large;
-  text-shadow: 2px 2px whitesmoke;
+  text-shadow: 1px 1px whitesmoke;
+  white-space: nowrap;
 }
 
-.home-button {
+/* .home-button {
   width: 75%;
+}  */
+
+a:hover {
+  transform: scale(1.05);
 }
 
 .vibrate-2:hover {

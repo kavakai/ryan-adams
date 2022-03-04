@@ -4,6 +4,7 @@
   background: transparent;
   border: transparent;
   box-shadow: 2px 8px 8px -4px rgb(0, 179, 255);
+  cursor: pointer;
 }
 
 .playlist-card {

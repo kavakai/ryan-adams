@@ -1,15 +1,11 @@
-/* .body{
-  height: 100vh;
-  background-image: url('../../Assets/Arcade.jpg');
-  background-size: contain;
-  overflow: hidden;
-} */
 
-
-
-.main {
+main {
   margin-top: 3%;
   height: 100%;
   overflow: scroll;
+  height: 100vh;
+  width: 100vw;
 }
+
+
 

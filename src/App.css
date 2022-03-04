@@ -4,15 +4,31 @@ html {
   font-family: 'Arvo', serif;
 }
 
-body {
+#root {
+  background-color: rgba(0,0,0,.5);
+  height: 100vh;
+}
+
+/* .App {
   height: 100vh;
   background-image: url('./Assets/Arcade.jpg');
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+} */
+
+body {
+  background-image: url('./Assets/Arcade.jpg');
   overflow: scroll;
+  height: 100%;
+  background-size: cover;
+  background-repeat: round;
 }
 
 .nav{
   display: flex;
   height: 10%;
-  justify-content: flex-end;
+  justify-content: space-between;
+  background-color: #000;
+  padding: 2%;
 }

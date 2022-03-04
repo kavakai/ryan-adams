@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./AlbumContainer.css"
 import PlaylistCard from "./PlaylistCard";
 
@@ -17,9 +16,20 @@ const PlaylistContainer = ({ albums }) => {
     )
   })
   
+  const checkCovers = () => {
+    if (covers.length) {
+      return covers
+    } else {
+      return (
+      <section className="add-some-container">
+        <h2 className="add-statement">Add some albums and let's start listening</h2>
+      </section>
+      )}
+  }
+
   return (
     <section className='cover-container'>
-      {covers}
+      {checkCovers()}
     </section>
     
   )
