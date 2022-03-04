@@ -17,7 +17,7 @@ const Home = () => {
       )
     } else {
       return (
-        <main className='main'>  
+        <main>  
           {!loading && <AlbumContainer albums={albums} />}
         </main>
       )

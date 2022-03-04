@@ -4,11 +4,16 @@
   justify-self: center;
   font-size: xx-large;
   text-shadow: 1px 1px whitesmoke;
+  white-space: nowrap;
 }
 
-.home-button {
+/* .home-button {
   width: 75%;
-} 
+}  */
+
+a:hover {
+  transform: scale(1.05);
+}
 
 .vibrate-2:hover {
 	-webkit-animation: vibrate-2 0.3s linear infinite both;
