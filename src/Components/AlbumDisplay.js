@@ -24,14 +24,15 @@ const AlbumDisplay = ({ singleAlbum, setPlaylist, albums, playlist }) => {
     }
     console.log(playlistAlbum, 'to be added')
     console.log(albumInPlaylist, 'in playlist')
-
+    
     if (!albumInPlaylist) {
       setPlaylist([...playlist, playlistAlbum])
+      setMessage("You have added this album to your playlist")
     } else if (albumInPlaylist && playlistAlbum.id != albumInPlaylist.id) {
       setMessage("Album already in your playlist")
+    } else {
+      setMessage("Album already in your playlist")
     }
-    setMessage("You have added this album to your playlist")
-      
   }
 
   return (
