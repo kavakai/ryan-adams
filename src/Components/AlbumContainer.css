@@ -19,6 +19,7 @@
     align-items: center;
     background-color: rgb(42 42 42 / 75%);
     padding: 1%;
+    font-size: large;
   }
 }
 
@@ -29,6 +30,22 @@
     row-gap: 1em;
     overflow-y: auto;
   }
+
+  .add-statement {
+    color: rgb(85, 255, 0);
+    text-shadow: 1px 1px red;
+  }
+
+  .add-some-container {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(42 42 42 / 75%);
+    padding: 1%;
+    font-size: medium;
+  }
 }
 
 @media screen and (max-width: 45em) {
@@ -37,6 +54,22 @@
     grid-template-columns: repeat(2, 1fr);
     row-gap: 1em;
     overflow-y: auto;
+  }
+
+  .add-statement {
+    color: rgb(85, 255, 0);
+    text-shadow: 1px 1px red;
+  }
+
+  .add-some-container {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(42 42 42 / 75%);
+    padding: 1%;
+    font-size: small;
   }
   
 }
