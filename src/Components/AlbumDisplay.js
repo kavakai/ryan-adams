@@ -18,8 +18,20 @@ const AlbumDisplay = ({ singleAlbum, setPlaylist, albums, playlist }) => {
 
   const handleClick = (id) => {
     const playlistAlbum = albums.find(album => album.id === id)
-    setPlaylist([...playlist, playlistAlbum])
+    let albumInPlaylist
+    if (playlist.length >= 1) {
+      albumInPlaylist = playlist.find(album => album.id === id)
+    }
+    console.log(playlistAlbum, 'to be added')
+    console.log(albumInPlaylist, 'in playlist')
+
+    if (!albumInPlaylist) {
+      setPlaylist([...playlist, playlistAlbum])
+    } else if (albumInPlaylist && playlistAlbum.id != albumInPlaylist.id) {
+      setMessage("Album already in your playlist")
+    }
     setMessage("You have added this album to your playlist")
+      
   }
 
   return (
