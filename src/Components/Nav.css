@@ -75,10 +75,10 @@ a:hover {
 
   .page-title {
   align-self: center;
-  color: red;
+  color: whitesmoke;
   justify-self: center;
   font-size: xx-large;
-  text-shadow: 1px 1px whitesmoke;
+  text-shadow: 1px 1px purple;
   white-space: nowrap;
   }
 }
