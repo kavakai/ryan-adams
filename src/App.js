@@ -20,7 +20,7 @@ const App = () => {
         <section className="App">
           <Switch>
             <Route exact path="/" component={Home}/>
-            <Route exact path="/album" component={AlbumInfo}/>
+            <Route exact path="/album/:id" component={AlbumInfo}/>
             <Route exact path="/playlist" component={Playlist}/>
             <Route exact path="/about" component={About} />
             <Route exact path="/error" component={Error} />
