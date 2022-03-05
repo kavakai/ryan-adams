@@ -33,5 +33,17 @@ describe("home page", () => {
       .route("/about")
       .get("p")
       .should("have.class", "about-content")
-  })
+  });
+
+  it("Should be able to click an album cover and see info about that album", () => {
+    cy.get("[data-testid=cover-img]")
+      .first()
+      .click()
+      .server()
+      .route("/album")
+      .get("h2")
+      .contains("Heartbreaker")
+      .get("p")
+      .should("have.length", 18)
+  });
 })
