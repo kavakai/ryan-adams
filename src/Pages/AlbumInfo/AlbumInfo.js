@@ -1,13 +1,22 @@
-import React, {useContext} from "react";
+import React, {useContext, useEffect} from "react";
 import { RyanContext } from "../../Contexts/RyanContext";
 import AlbumDisplay from "../../Components/AlbumDisplay";
 import Nav from "../../Components/Nav";
 import "./AlbumInfo.css"
+import { getAlbum } from "../../ApiCalls";
 
 
 const AlbumInfo = () => {
 
-  const { albums, playlist, setPlaylist, singleAlbum } = useContext(RyanContext)
+  const { albums, playlist, setPlaylist, singleAlbum, setSingleAlbum } = useContext(RyanContext)
+  
+
+  useEffect(() => {
+    const id = window.location.pathname.substring(window.location.pathname.lastIndexOf("/") + 1)
+    getAlbum(id)
+    .then(data => setSingleAlbum(data))
+  })
+
 
   
 

@@ -21,7 +21,7 @@ const AlbumCard = ({id, cover}) => {
     }
     
   const changePage = () => {
-      history.push(`/album/${singleAlbum}`)
+      history.push(`/album/${id}`)
   }
 
   

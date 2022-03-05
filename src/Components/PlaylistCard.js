@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { RyanContext } from "../Contexts/RyanContext";
 import { getAlbum } from "../ApiCalls";
 import "./AlbumCard.css"
@@ -7,7 +7,7 @@ import "./AlbumCard.css"
 
 const PlaylistCard = ({id, cover}) => {
   
-  const { albums, setSingleAlbum, playlist, setPlaylist } = useContext(RyanContext);
+  const { setSingleAlbum, playlist, setPlaylist } = useContext(RyanContext);
 
   const history = useHistory();
 
