@@ -1,11 +1,4 @@
-.page-title {
-  align-self: center;
-  color: red;
-  justify-self: center;
-  font-size: xx-large;
-  text-shadow: 1px 1px whitesmoke;
-  white-space: nowrap;
-}
+
 
 /* .home-button {
   width: 75%;
@@ -73,8 +66,38 @@ a:hover {
 }
 
 
-.nav-btns {
-  width: 25%;
-  display: flex;
-  justify-content: space-around;
+@media screen and (min-width: 53em) {
+  .nav-btns {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .page-title {
+  align-self: center;
+  color: whitesmoke;
+  justify-self: center;
+  font-size: xx-large;
+  text-shadow: 1px 1px purple;
+  white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 52em) {
+  .nav-btns {
+    font-size: small;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .page-title {
+  align-self: center;
+  color: whitesmoke;
+  justify-self: center;
+  font-size: x-large;
+  text-shadow: 1px 1px purple;
+  white-space: nowrap;
+  }
 }

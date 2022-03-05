@@ -1,21 +1,77 @@
-.cover-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: 2ch;
-  overflow-y: auto;
+@media screen and (min-width: 73em) {
+  .cover-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 2em;
+    overflow-y: auto;
+  }
+
+  .add-statement {
+    color: rgb(85, 255, 0);
+    text-shadow: 1px 1px red;
+  }
+
+  .add-some-container {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(42 42 42 / 75%);
+    padding: 1%;
+    font-size: large;
+  }
 }
 
-.add-statement {
-  color: rgb(85, 255, 0);
-  text-shadow: 1px 1px red;
+@media screen and (max-width: 72em) {
+  .cover-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1em;
+    overflow-y: auto;
+  }
+
+  .add-statement {
+    color: rgb(85, 255, 0);
+    text-shadow: 1px 1px red;
+  }
+
+  .add-some-container {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(42 42 42 / 75%);
+    padding: 1%;
+    font-size: medium;
+  }
 }
 
-.add-some-container {
-  width: 100vw;
-  height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(42 42 42 / 75%);
-  padding: 1%;
+@media screen and (max-width: 45em) {
+  .cover-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1em;
+    overflow-y: auto;
+  }
+
+  .add-statement {
+    color: rgb(85, 255, 0);
+    text-shadow: 1px 1px red;
+  }
+
+  .add-some-container {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(42 42 42 / 75%);
+    padding: 1%;
+    font-size: small;
+  }
+  
 }
+
+
