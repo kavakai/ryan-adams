@@ -40,7 +40,7 @@ describe("home page", () => {
       .first()
       .click()
       .server()
-      .route("/album")
+      .route("/album/1")
       .get("h2")
       .contains("Heartbreaker")
       .get("p")

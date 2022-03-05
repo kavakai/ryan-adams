@@ -15,14 +15,13 @@ const AlbumCard = ({id, cover}) => {
     // const albumInfo = albums.find(album => album.id === id)
     getAlbum(id)
       .then(data => setSingleAlbum(data))
-      console.log(singleAlbum)
     setTimeout(() => {
       changePage()
-    }, 100)
+    }, 50)
     }
     
   const changePage = () => {
-      history.push(`/album/${id}`)
+      history.push(`/album/${singleAlbum}`)
   }
 
   

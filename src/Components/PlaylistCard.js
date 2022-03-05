@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { RyanContext } from "../Contexts/RyanContext";
+import { getAlbum } from "../ApiCalls";
 import "./AlbumCard.css"
 
 
@@ -11,9 +12,14 @@ const PlaylistCard = ({id, cover}) => {
   const history = useHistory();
 
   const handleClick = (id) => {
-    const albumInfo = albums.find(album => album.id === id)
-    setSingleAlbum(albumInfo)
-    history.push("/album")
+    getAlbum(id)
+      .then(data => setSingleAlbum(data))
+    setTimeout(() => {
+      changePage()
+    }, 50)
+  }
+  const changePage = () => {
+    history.push(`/album/${id}`)
   }
 
   const remove = (id) => {
