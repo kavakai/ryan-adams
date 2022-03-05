@@ -11,12 +11,12 @@ const Nav = () => {
   
   return (
     <>
-      <article className="home-button data-testid=nav-buttons">
+      <article className="home-button" data-testid="nav-buttons">
         <Link to="/" className="page-title" onClick={() =>setSingleAlbum({}) }>Ryan Adams</Link>
       </article>
       <article className="nav-btns">
-        <Link to="/playlist" className="page-title data-testid=nav-buttons" onClick={() => setSingleAlbum({})}>My Playlist</Link>
-        <Link to="/about" className="page-title data-testid=nav-buttons" onClick={() => setSingleAlbum({})}>About</Link>
+        <Link to="/playlist" className="page-title" data-testid="nav-buttons" onClick={() => setSingleAlbum({})}>My Playlist</Link>
+        <Link to="/about" className="page-title" data-testid="nav-buttons" onClick={() => setSingleAlbum({})}>About</Link>
       </article>
     </>
   )
