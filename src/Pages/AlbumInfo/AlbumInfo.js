@@ -1,7 +1,7 @@
-import React, {useContext, useEffect} from "react";
+import React, { useContext, useEffect } from "react";
+import PropTypes from "prop-types";
 import { RyanContext } from "../../Contexts/RyanContext";
 import AlbumDisplay from "../../Components/AlbumDisplay";
-import Nav from "../../Components/Nav";
 import "./AlbumInfo.css"
 import { getAlbum } from "../../ApiCalls";
 
@@ -33,3 +33,17 @@ const AlbumInfo = () => {
 }
 
 export default AlbumInfo
+
+AlbumInfo.propType = {
+  singleAlbum: PropTypes.object.isRequired,
+  albums: PropTypes.array.isRequired,
+  playlist: PropTypes.array.isRequired,
+  setPlaylist: PropTypes.func.isRequired,
+  setSingleAlbum: PropTypes.func.isRequired
+}
+
+AlbumInfo.defaultProps = {
+  singleAlbum: {},
+  albums: [],
+  playlist: [],
+}
