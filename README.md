@@ -16,10 +16,9 @@
 
 ## Screenshots
 
-![]()
-![]()
-![]()
-![]()
+![Home Page](https://media.giphy.com/media/CPi5Mk4g7YfsVkDRsJ/giphy.gif)
+![Basic User Flow](https://media.giphy.com/media/ZO6Gs0BTQ6tNq8oWEk/giphy.gif)
+![Adding and removing from playlist](https://media.giphy.com/media/gha3d5mVZA0XR0Q7dQ/giphy.gif)
 
 ## FUTURE FEATURES
 - The ability to add new albums as they are released. 
