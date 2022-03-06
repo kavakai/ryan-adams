@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import PropTypes from "prop-types";
 import AlbumContainer from "../../Components/AlbumContainer";
 import { RyanContext } from "../../Contexts/RyanContext";
 import Error from "../Error/Error";
@@ -32,3 +33,15 @@ const Home = () => {
 }
 
 export default Home
+
+Home.propTypes = {
+  albums: PropTypes.array.isRequired,
+  loading: PropTypes.bool.isRequired,
+  error: PropTypes.string.isRequired
+}
+
+Home.defaultProps = {
+  albums: [],
+  loading: true,
+  error: ''
+}
