@@ -61,7 +61,9 @@ AlbumInfo.propType = {
   setPlaylist: PropTypes.func.isRequired,
   setSingleAlbum: PropTypes.func.isRequired,
   error: PropTypes.string.isRequired,
-  setError: PropTypes.func.isRequired
+  setError: PropTypes.func.isRequired,
+  loading: PropTypes.bool.isRequired,
+  setLoading: PropTypes.func.isRequired
 };
 
 AlbumInfo.defaultProps = {
