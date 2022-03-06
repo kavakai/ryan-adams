@@ -35,14 +35,14 @@
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 
 ## INSTRUCTIONS
-- fork this server repository first ![Here](https://github.com/kavakai/ryan-adams-albums)
+- fork this server repository first [Here](https://github.com/kavakai/ryan-adams-albums)
 - copy the SSH clone address
 - run ```git clone git@github.com:kavakai/ryan-adams-albums.git``` in your repo
 - run ```npm install``` in your terminal
 - run ```npm start``` in the terminal
 - You should see "Ryan Adams Albums is running on http://localhost:4020." in your terminal
 
-- Next, visit the deployed site ![Here](https://fierce-plains-74115.herokuapp.com/)
+- Next, visit the deployed site [Here](https://fierce-plains-74115.herokuapp.com/)
 
 ## AUTHORS/LINKS
 
@@ -52,4 +52,4 @@
 #### - AUTHORS:
 - Kai Kuller = [LinkedIn](www.linkedin.com/in/kai-kuller) || [GitHub](https://github.com/kavakai)
 
-## [BACK TO THE TOP!](#mod2-overlook-hotel)
+## [BACK TO THE TOP!](#ryan-adams-albums)
