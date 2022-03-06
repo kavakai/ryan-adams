@@ -53,8 +53,12 @@ describe("Single album view", () => {
   });
 
   it("Should be able to navigate directly to an album from the url", () => {
-    cy.intercept("http/localhost:4020", gold)
-    cy.visit("https://fierce-plains-74115.herokuapp.com/album/2")
-      .get()
+    cy.intercept("http/localhost:4020/2", gold)
+    cy.visit("http://localhost:3000/album/2")
+      .get("h2")
+      .contains("Gold")
+      .get("img")
+      .should("have.attr", "src")
+      .should("include", "https://upload.wikimedia.org/wikipedia/en/b/bc/Ryan_Adams_Gold.jpg")
   })
 })
