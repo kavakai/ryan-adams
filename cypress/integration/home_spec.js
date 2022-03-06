@@ -1,8 +1,8 @@
 describe("home page", () => {
 
   beforeEach(() => {
-    // cy.intercept("http://localhost:4020/", { fixture: "testData" }).as("testData")
     cy.visit("http://localhost:3000/")
+    cy.intercept("http://localhost:4020/", { fixture: "testData" }).as("testData")
   })
   
   it("I should see a title/navgation button and other navigation buttons in the header and all album covers", () => {
