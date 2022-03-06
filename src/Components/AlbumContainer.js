@@ -1,6 +1,7 @@
 import React from "react";
+import PropTypes from "prop-types";
 import AlbumCard from "./AlbumCard";
-import "./AlbumContainer.css"
+import "./AlbumContainer.css";
 
 
 
@@ -14,9 +15,7 @@ const AlbumContainer = ({ albums }) => {
         cover={album.image}
       />
     )
-  })
-
-  // const playlistCovers = playlist.map(album => )
+  });
   
   return (
     <section className='cover-container'>
@@ -24,6 +23,11 @@ const AlbumContainer = ({ albums }) => {
     </section>
     
   )
-}
+};
 
 export default AlbumContainer
+
+AlbumContainer.propTypes = {
+  albums: PropTypes.array.isRequired,
+  covers: PropTypes.arrayOf(PropTypes.element)
+};

@@ -5,8 +5,8 @@ const getRyan = () => {
 
 const getAlbum = (id) => {
     return fetch(`http://localhost:4020/${id}`)
-    .then(response => checkResponse(response))
-}
+        .then(response => checkResponse(response))
+};
 
 const checkResponse = (response) => {
     if (!response.ok) {

@@ -13,23 +13,23 @@ const RyanProvider = (props) => {
   const [error, setError] = useState('');
 
   useEffect(() => {
-      getRyan()
+    getRyan()
       .then(data => setData(data))
       .catch(err => setError(err.message))
-  }, [])
+  }, []);
 
   const setData = (data) => {
     setRyanData(data);
     setAlbums(data.albums);
-  }
+  };
   
   useEffect(() => {
     if (albums.length === 19) {
       setLoading(false)
     }
-  }, [albums])
+  }, [albums]);
   
-  const values =  { albums, setAlbums, ryanData, setRyanData, loading, setLoading, singleAlbum, setSingleAlbum, playlist, setPlaylist, error, setError }
+  const values = { albums, setAlbums, ryanData, setRyanData, loading, setLoading, singleAlbum, setSingleAlbum, playlist, setPlaylist, error, setError };
   
 
   return (
@@ -37,6 +37,6 @@ const RyanProvider = (props) => {
       {props.children}
     </RyanContext.Provider>
   )
-}
+};
 
 export default RyanProvider

@@ -1,5 +1,6 @@
 import React from "react";
-import "./AlbumContainer.css"
+import PropTypes from "prop-types";
+import "./AlbumContainer.css";
 import PlaylistCard from "./PlaylistCard";
 
 
@@ -14,18 +15,19 @@ const PlaylistContainer = ({ albums }) => {
         cover={album.image}
       />
     )
-  })
+  });
   
   const checkCovers = () => {
     if (covers.length) {
       return covers
     } else {
       return (
-      <section className="add-some-container">
-        <h2 className="add-statement">Add some albums and let's start listening</h2>
-      </section>
-      )}
-  }
+        <section className="add-some-container">
+          <h2 className="add-statement">Add some albums and let's start listening</h2>
+        </section>
+      )
+    }
+  };
 
   return (
     <section className='cover-container'>
@@ -33,6 +35,10 @@ const PlaylistContainer = ({ albums }) => {
     </section>
     
   )
-}
+};
 
 export default PlaylistContainer
+
+PlaylistContainer.propTypes = {
+  albums: PropTypes.array.isRequired
+};

@@ -1,13 +1,12 @@
-import React, { useContext, useState } from "react";
-import { RyanContext } from "../Contexts/RyanContext";
-import "./AlbumDisplay.css"
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import "./AlbumDisplay.css";
 
 const AlbumDisplay = ({ singleAlbum, setPlaylist, albums, playlist }) => {
 
   const [message, setMessage] = useState('');
 
   const getTracks = () => {
-    
     return singleAlbum.tracks.map((track, index) => {
       return (
         <div key={index}>
@@ -15,7 +14,7 @@ const AlbumDisplay = ({ singleAlbum, setPlaylist, albums, playlist }) => {
         </div>
       )
     })
-  }
+  };
 
   const handleClick = (id) => {
     const playlistAlbum = albums.find(album => album.id === id)
@@ -31,7 +30,7 @@ const AlbumDisplay = ({ singleAlbum, setPlaylist, albums, playlist }) => {
     } else {
       setMessage("Album already in your playlist")
     }
-  }
+  };
 
   return (
     <>
@@ -52,6 +51,18 @@ const AlbumDisplay = ({ singleAlbum, setPlaylist, albums, playlist }) => {
       </article>
     </>
   )
-}
+};
 
 export default AlbumDisplay
+
+AlbumDisplay.propTypes = {
+  singleAlbum: PropTypes.object.isRequired,
+  setPlaylist: PropTypes.func.isRequired,
+  albums: PropTypes.array.isRequired,
+  playlist: PropTypes.array.isRequired,
+  message: PropTypes.string.isRequired
+};
+
+AlbumDisplay.defaultProps = {
+  message: ''
+};
