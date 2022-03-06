@@ -47,8 +47,8 @@ PlaylistCard.propTypes = {
   setSingleAlbum: PropTypes.func,
   playlist: PropTypes.array.isRequired,
   setPlaylist: PropTypes.func
-}
+};
 
 PlaylistCard.defaultProps = {
   playlist: [],
-}
+};

@@ -20,8 +20,8 @@ export default About
 
 About.propTypes = {
   ryanData: PropTypes.object.isRequired
-}
+};
 
 About.defaultProps = {
   ryanData: {}
-}
+};

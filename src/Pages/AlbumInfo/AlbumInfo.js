@@ -2,23 +2,19 @@ import React, { useContext, useEffect } from "react";
 import PropTypes from "prop-types";
 import { RyanContext } from "../../Contexts/RyanContext";
 import AlbumDisplay from "../../Components/AlbumDisplay";
-import "./AlbumInfo.css"
+import "./AlbumInfo.css";
 import { getAlbum } from "../../ApiCalls";
 
 
 const AlbumInfo = () => {
 
-  const { albums, playlist, setPlaylist, singleAlbum, setSingleAlbum } = useContext(RyanContext)
+  const { albums, playlist, setPlaylist, singleAlbum, setSingleAlbum } = useContext(RyanContext);
   
-
   useEffect(() => {
     const id = window.location.pathname.substring(window.location.pathname.lastIndexOf("/") + 1)
     getAlbum(id)
-    .then(data => setSingleAlbum(data))
-  })
-
-
-  
+      .then(data => setSingleAlbum(data))
+  });
 
   return (
     <section className="single-container">
@@ -30,7 +26,7 @@ const AlbumInfo = () => {
       />
     </section>
   )
-}
+};
 
 export default AlbumInfo
 
@@ -40,10 +36,10 @@ AlbumInfo.propType = {
   playlist: PropTypes.array.isRequired,
   setPlaylist: PropTypes.func.isRequired,
   setSingleAlbum: PropTypes.func.isRequired
-}
+};
 
 AlbumInfo.defaultProps = {
   singleAlbum: {},
   albums: [],
   playlist: [],
-}
+};

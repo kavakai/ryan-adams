@@ -25,4 +25,4 @@ export default Nav
 
 Nav.propTypes = {
   setSingleAlbum: PropTypes.func
-}
+};

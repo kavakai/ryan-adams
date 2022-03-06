@@ -38,4 +38,4 @@ AlbumCard.propTypes = {
   id: PropTypes.number.isRequired,
   cover: PropTypes.string.isRequired,
   setSingleAlbum: PropTypes.func
-}
+};

@@ -41,4 +41,4 @@ export default PlaylistContainer
 
 PlaylistContainer.propTypes = {
   albums: PropTypes.array.isRequired
-}
+};

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
-import RyanProvider, { RyanContext } from './Contexts/RyanContext';
+import RyanProvider from './Contexts/RyanContext';
 import Home from './Pages/Home/Home';
 import AlbumInfo from './Pages/AlbumInfo/AlbumInfo';
 import About from './Pages/About/About';
