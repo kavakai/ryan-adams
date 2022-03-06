@@ -1,8 +1,9 @@
+import ryanData from "../data/sampleData"
 describe("home page", () => {
 
   beforeEach(() => {
-    cy.visit("http://localhost:3000/")
-    cy.intercept("http://localhost:4020/", { fixture: "testData" }).as("testData")
+    cy.intercept("GET", "http://localhost:4020/", ryanData).as("testData")
+    cy.visit("https://fierce-plains-74115.herokuapp.com/")
   })
   
   it("I should see a title/navgation button and other navigation buttons in the header and all album covers", () => {

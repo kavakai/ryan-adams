@@ -29,7 +29,7 @@ const RyanProvider = (props) => {
     }
   }, [albums]);
   
-  const values = { albums, setAlbums, ryanData, setRyanData, loading, setLoading, singleAlbum, setSingleAlbum, playlist, setPlaylist, error, setError };
+  const values = { albums, setAlbums, ryanData, setRyanData, loading, setLoading, singleAlbum, setSingleAlbum, playlist, setPlaylist, error, setError, loading, setLoading };
   
 
   return (
