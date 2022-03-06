@@ -2,7 +2,7 @@ describe("Single album view", () => {
 
   beforeEach(() => {
     // cy.intercept("http://localhost:4020/1", { fixture: "testData.json" })
-    cy.visit("http://localhost:3000/")
+    cy.visit("https://fierce-plains-74115.herokuapp.com/")
   })
 
   it("Should be able to view info on my selected album", () => {

@@ -1,7 +1,7 @@
 describe("Playlist", () => {
 
   it("Should display a message if there are no albums in my playlist", () => {
-    cy.visit("http://localhost:3000/")
+    cy.visit("https://fierce-plains-74115.herokuapp.com/")
     cy.get("[data-testid=nav-buttons]")
       .eq(1)
       .click()
@@ -12,7 +12,7 @@ describe("Playlist", () => {
   })
 
   it("Should show my albums when I add them", () => {
-    cy.visit("http://localhost:3000/")
+    cy.visit("https://fierce-plains-74115.herokuapp.com/")
     cy.get("[data-testid=cover-img]")
       .first()
       .click()
@@ -30,7 +30,7 @@ describe("Playlist", () => {
   })
 
   it("Should be able to remove an album from my playlist", () => {
-    cy.visit("http://localhost:3000/")
+    cy.visit("https://fierce-plains-74115.herokuapp.com/")
     cy.get("[data-testid=cover-img]")
       .first()
       .click()
