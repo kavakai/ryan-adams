@@ -61,8 +61,8 @@ AlbumDisplay.propTypes = {
   albums: PropTypes.array.isRequired,
   playlist: PropTypes.array.isRequired,
   message: PropTypes.string.isRequired
-}
+};
 
 AlbumDisplay.defaultProps = {
   message: ''
-}
+};
