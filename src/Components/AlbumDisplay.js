@@ -7,7 +7,6 @@ const AlbumDisplay = ({ singleAlbum, setPlaylist, albums, playlist }) => {
   const [message, setMessage] = useState('');
 
   const getTracks = () => {
-    console.log(singleAlbum, 'in al display')
     return singleAlbum.tracks.map((track, index) => {
       return (
         <div key={index}>
