@@ -7,6 +7,7 @@ const AlbumDisplay = ({ singleAlbum, setPlaylist, albums, playlist }) => {
   const [message, setMessage] = useState('');
 
   const getTracks = () => {
+    
     return singleAlbum.tracks.map((track, index) => {
       return (
         <div key={index}>
@@ -22,9 +23,6 @@ const AlbumDisplay = ({ singleAlbum, setPlaylist, albums, playlist }) => {
     if (playlist.length >= 1) {
       albumInPlaylist = playlist.find(album => album.id === id)
     }
-    console.log(playlistAlbum, 'to be added')
-    console.log(albumInPlaylist, 'in playlist')
-    
     if (!albumInPlaylist) {
       setPlaylist([...playlist, playlistAlbum])
       setMessage("You have added this album to your playlist")

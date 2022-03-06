@@ -16,7 +16,7 @@ const RyanProvider = (props) => {
       getRyan()
       .then(data => setData(data))
       .catch(err => setError(err.message))
-  }, [albums])
+  }, [])
 
   const setData = (data) => {
     setRyanData(data);

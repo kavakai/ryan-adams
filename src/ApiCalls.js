@@ -3,6 +3,11 @@ const getRyan = () => {
     .then(response => checkResponse(response))
 };
 
+const getAlbum = (id) => {
+    return fetch(`http://localhost:4020/${id}`)
+    .then(response => checkResponse(response))
+}
+
 const checkResponse = (response) => {
     if (!response.ok) {
         throw new Error("Something went wrong. Refresh and try again.")
@@ -11,4 +16,4 @@ const checkResponse = (response) => {
     }
 };
 
-export { getRyan }
+export { getRyan, getAlbum }
