@@ -1,11 +1,8 @@
+import gold from "../data/singleTestAlbum"
 describe("Single album view", () => {
 
-  beforeEach(() => {
-    // cy.intercept("http://localhost:4020/1", { fixture: "testData.json" })
-    cy.visit("https://fierce-plains-74115.herokuapp.com/")
-  })
-
   it("Should be able to view info on my selected album", () => {
+    cy.visit("https://fierce-plains-74115.herokuapp.com/")
     cy.get("[data-testid=cover-img]")
       .first()
       .click()
@@ -18,6 +15,7 @@ describe("Single album view", () => {
   });
 
   it("Should be able to add the album to my playlist", () => {
+    cy.visit("https://fierce-plains-74115.herokuapp.com/")
     cy.get("[data-testid=cover-img]")
       .first()
       .click()
@@ -30,6 +28,7 @@ describe("Single album view", () => {
   });
 
   it("Should tell me if I have already added an album to my playlist", () => {
+    cy.visit("https://fierce-plains-74115.herokuapp.com/")
     cy.get("[data-testid=cover-img]")
       .first()
       .click()
@@ -52,4 +51,10 @@ describe("Single album view", () => {
       .get("h3")
       .contains("Album already in your playlist")
   });
+
+  it("Should be able to navigate directly to an album from the url", () => {
+    cy.intercept("http/localhost:4020", gold)
+    cy.visit("https://fierce-plains-74115.herokuapp.com/album/2")
+      .get()
+  })
 })
