@@ -7,16 +7,24 @@
 - [Install Instructions](#instructions)
 - [Authors/Links](#authorslinks)
 
-## ABSTRACT (WHAT, HOW, WHY)
-- 2-3 SENTENCES MAX PER WHAT/HOW/WHY
-- INCLUDE PLENTY OF GIFS OF WORKING PROJ
+## ABSTRACT 
+- Ryan Adams is a musician and songwriter. This app is an anthology of all his albums, where you can select an album to view more details, add albums to a "playlist" and hopefully learn a bit more about Ryan as an artist. This application was built using React, React's context api, hooks, PropTypes, and tested with Cypress. Enjoy getting to know Ryan Adams and his music a little bit better. 
 
 ## Deployed Site
 
 [Ryan Adams Music](https://fierce-plains-74115.herokuapp.com/)
 
+## Screenshots
+
+![]()
+![]()
+![]()
+![]()
+
 ## FUTURE FEATURES
-- NOT TOO MANY
+- The ability to add new albums as they are released. 
+- The ability to listen to tracks from each album.
+- More advanced UX
 
 ## TECHNOLOGIES USED 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
@@ -51,7 +59,7 @@
 ## AUTHORS/LINKS
 
 #### - Project
-- [Project Board]()
+- [Original Spec](https://frontend.turing.edu/projects/module-3/showcase.html)
 
 #### - AUTHORS:
 - Kai Kuller = [LinkedIn](www.linkedin.com/in/kai-kuller) || [GitHub](https://github.com/kavakai)
