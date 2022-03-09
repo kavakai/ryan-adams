@@ -1,10 +1,10 @@
 const getRyan = () => {
-  return fetch("http://localhost:4020/")
+  return fetch("https://dashboard.heroku.com/apps/calm-headland-82293/")
     .then(response => checkResponse(response))
 };
 
 const getAlbum = (id) => {
-    return fetch(`http://localhost:4020/${id}`)
+    return fetch(`https://dashboard.heroku.com/apps/calm-headland-82293/${id}`)
         .then(response => checkResponse(response))
 };
 
