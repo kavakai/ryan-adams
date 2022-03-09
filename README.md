@@ -7,12 +7,25 @@
 - [Install Instructions](#instructions)
 - [Authors/Links](#authorslinks)
 
-## ABSTRACT (WHAT, HOW, WHY)
-- 2-3 SENTENCES MAX PER WHAT/HOW/WHY
-- INCLUDE PLENTY OF GIFS OF WORKING PROJ
+## ABSTRACT 
+- Ryan Adams is a musician and songwriter. This app is an anthology of all his albums, where you can select an album to view more details, add albums to a "playlist" and hopefully learn a bit more about Ryan as an artist. This application was built using React, React's context api, hooks, PropTypes, and tested with Cypress. Enjoy getting to know Ryan Adams and his music a little bit better. 
+
+## Deployed Site
+
+[Ryan Adams Music](https://fierce-plains-74115.herokuapp.com/)
+
+## Screenshots
+
+![Home Page](https://media.giphy.com/media/CPi5Mk4g7YfsVkDRsJ/giphy.gif)
+
+![Basic User Flow](https://media.giphy.com/media/ZO6Gs0BTQ6tNq8oWEk/giphy.gif)
+
+![Adding and removing from playlist](https://media.giphy.com/media/gha3d5mVZA0XR0Q7dQ/giphy.gif)
 
 ## FUTURE FEATURES
-- NOT TOO MANY
+- The ability to add new albums as they are released. 
+- The ability to listen to tracks from each album.
+- More advanced UX
 
 ## TECHNOLOGIES USED 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
@@ -30,6 +43,7 @@
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
 ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
+![Heroku](https://img.shields.io/badge/%E2%86%91_Deploy_to-Heroku-7056bf.svg?style=flat)
 
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
@@ -47,7 +61,7 @@
 ## AUTHORS/LINKS
 
 #### - Project
-- [Project Board]()
+- [Original Spec](https://frontend.turing.edu/projects/module-3/showcase.html)
 
 #### - AUTHORS:
 - Kai Kuller = [LinkedIn](www.linkedin.com/in/kai-kuller) || [GitHub](https://github.com/kavakai)
