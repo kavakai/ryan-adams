@@ -4,7 +4,7 @@ const getRyan = () => {
 };
 
 const getAlbum = (id) => {
-    return fetch(`https://calm-headland-82293.herokuapp.com/album/${id}`)
+    return fetch(`https://calm-headland-82293.herokuapp.com/${id}`)
         .then(response => checkResponse(response))
 };
 
