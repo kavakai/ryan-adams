@@ -13,11 +13,15 @@ const PlaylistCard = ({ id, cover }) => {
   const history = useHistory();
 
   const handleClick = (id) => {
-    getAlbum(id)
-      .then(data => setSingleAlbum(data))
-    setTimeout(() => {
-      changePage()
-    }, 50)
+    const getAlbumInfo = async () => {
+      await getAlbum(id)
+        .then(data => setSingleAlbum(data))
+        .catch(err => setError(err.message))
+    }
+    getAlbumInfo()
+    // setTimeout(() => {
+    //   changePage()
+    // }, 50)
   };
 
   const changePage = () => {
