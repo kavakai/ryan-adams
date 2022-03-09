@@ -8,7 +8,7 @@ import "./AlbumCard.css";
 
 const PlaylistCard = ({ id, cover }) => {
   
-  const { setSingleAlbum, playlist, setPlaylist } = useContext(RyanContext);
+  const { setSingleAlbum, playlist, setPlaylist, setError } = useContext(RyanContext);
 
   const history = useHistory();
 
