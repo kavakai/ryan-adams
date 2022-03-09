@@ -19,10 +19,9 @@ const PlaylistCard = ({ id, cover }) => {
         .catch(err => setError(err.message))
     }
     getAlbumInfo()
-    changePage()
-    // setTimeout(() => {
-    //   changePage()
-    // }, 50)
+    setTimeout(() => {
+      changePage()
+    }, 100)
   };
 
   const changePage = () => {
