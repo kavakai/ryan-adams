@@ -16,12 +16,12 @@ const PlaylistCard = ({ id, cover }) => {
       await getAlbum(id)
         .then(data => {
           setSingleAlbum(data)
-          changePage()
+          changePage(id)
         })
       .catch(err => setError(err.message))
   };
 
-  const changePage = () => {
+  const changePage = (id) => {
     history.push(`/album/${id}`)
   };
 
