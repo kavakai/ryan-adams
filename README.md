@@ -5,13 +5,13 @@
 - [Project Overview](#project-overview)
 - [Future Features](#future-features)
 - [Tech Stack](#technologies-used)
-- [Authors/Links](#authorslinks)
+- [Author/Links](#authorlinks)
 
 ## ABSTRACT 
 
 - Ryan Adams is a musician and songwriter. This app is an anthology of all his albums, where you can select an album to view more details, add albums to a "playlist" and hopefully learn a bit more about Ryan as an artist. This application was built using React, React's context api, hooks, PropTypes, and tested with Cypress. Enjoy getting to know Ryan Adams and his music a little bit better. 
 
-## Deployed Site and Server Repo
+## Deployed Site
 
 [Ryan Adams Music](https://fierce-plains-74115.herokuapp.com/)
 
