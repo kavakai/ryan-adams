@@ -13,16 +13,12 @@ const PlaylistCard = ({ id, cover }) => {
   const history = useHistory();
 
   const handleClick = (id) => {
-    getAlbum(id)
-      .then(data => setSingleAlbum(data))
-    setTimeout(() => {
-      changePage()
-    }, 500)
-  };
-
-  const changePage = () => {
     history.push(`/album/${id}`)
   };
+
+  // const changePage = () => {
+  //   history.push(`/album/${id}`)
+  // };
 
   const remove = (id) => {
     const filtered = playlist.filter(album => album.id != id)
