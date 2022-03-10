@@ -4,15 +4,15 @@
 - [Project Overview](#project-overview)
 - [Future Features](#future-features)
 - [Tech Stack](#technologies-used)
-- [Install Instructions](#instructions)
 - [Authors/Links](#authorslinks)
 
 ## ABSTRACT 
 - Ryan Adams is a musician and songwriter. This app is an anthology of all his albums, where you can select an album to view more details, add albums to a "playlist" and hopefully learn a bit more about Ryan as an artist. This application was built using React, React's context api, hooks, PropTypes, and tested with Cypress. Enjoy getting to know Ryan Adams and his music a little bit better. 
 
-## Deployed Site
+## Deployed Site and Server Repo
 
 [Ryan Adams Music](https://fierce-plains-74115.herokuapp.com/)
+[Ryan Adams Api Repo](https://github.com/kavakai/ryan-adams-albums)
 
 ## Screenshots
 
@@ -48,15 +48,6 @@
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 
-## INSTRUCTIONS
-- clone this server repository first [Here](https://github.com/kavakai/ryan-adams-albums)
-- run ```git clone git@github.com:kavakai/ryan-adams-albums.git``` in your terminal
-- cd into the repo
-- run ```npm install``` in your terminal
-- run ```npm start``` in the terminal
-- You should see "Ryan Adams Albums is running on http://localhost:4020." in your terminal
-
-- Next, visit the deployed site [Here](https://fierce-plains-74115.herokuapp.com/)
 
 ## AUTHORS/LINKS
 
