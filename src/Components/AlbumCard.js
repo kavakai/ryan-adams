@@ -8,17 +8,22 @@ import "./AlbumCard.css";
 
 const AlbumCard = ({ id, cover }) => {
   
-  const { setSingleAlbum } = useContext(RyanContext);
+  const { setSingleAlbum, setError } = useContext(RyanContext);
 
   const history = useHistory();
 
-  const handleClick = (id) => {
+  const handleClick = async (id) => {
+    await getAlbum(id)
+      .then(data => {
+        setSingleAlbum(data)
+        changePage(id)
+      })
+      .catch(err => setError(err.message))
+  }
+    
+  const changePage = (id) => {
     history.push(`/album/${id}`)
   };
-    
-  // const changePage = (id) => {
-  //   history.push(`/album/${id}`)
-  // };
 
   
   return (
