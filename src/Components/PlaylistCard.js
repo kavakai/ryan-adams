@@ -16,7 +16,6 @@ const PlaylistCard = ({ id, cover }) => {
       await getAlbum(id)
         .then(data => setSingleAlbum(data))
         .catch(err => setError(err.message))
-    }
     setTimeout(() => {
       changePage()
     }, 100)
