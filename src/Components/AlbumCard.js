@@ -13,16 +13,12 @@ const AlbumCard = ({ id, cover }) => {
   const history = useHistory();
 
   const handleClick = (id) => {
-    getAlbum(id)
-      .then(data => setSingleAlbum(data))
-    setTimeout(() => {
-      changePage()
-    }, 50)
-  };
-    
-  const changePage = () => {
     history.push(`/album/${id}`)
   };
+    
+  // const changePage = (id) => {
+  //   history.push(`/album/${id}`)
+  // };
 
   
   return (
