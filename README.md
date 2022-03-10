@@ -1,19 +1,19 @@
 # Ryan Adams Albums
 
 ## TABLE OF CONTENTS
+
 - [Project Overview](#project-overview)
 - [Future Features](#future-features)
 - [Tech Stack](#technologies-used)
 - [Authors/Links](#authorslinks)
 
 ## ABSTRACT 
+
 - Ryan Adams is a musician and songwriter. This app is an anthology of all his albums, where you can select an album to view more details, add albums to a "playlist" and hopefully learn a bit more about Ryan as an artist. This application was built using React, React's context api, hooks, PropTypes, and tested with Cypress. Enjoy getting to know Ryan Adams and his music a little bit better. 
 
 ## Deployed Site and Server Repo
 
 [Ryan Adams Music](https://fierce-plains-74115.herokuapp.com/)
-
-[Ryan Adams Api Repo](https://github.com/kavakai/ryan-adams-albums)
 
 ## Screenshots
 
@@ -24,11 +24,13 @@
 ![Adding and removing from playlist](https://media.giphy.com/media/gha3d5mVZA0XR0Q7dQ/giphy.gif)
 
 ## FUTURE FEATURES
+
 - The ability to add new albums as they are released. 
 - The ability to listen to tracks from each album.
 - More advanced UX
 
 ## TECHNOLOGIES USED 
+
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -50,12 +52,15 @@
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 
 
-## AUTHORS/LINKS
+## AUTHOR/LINKS
 
 #### - Project
 - [Original Spec](https://frontend.turing.edu/projects/module-3/showcase.html)
 
-#### - AUTHORS:
+#### - Server
+- [Ryan Adams Api Repo](https://github.com/kavakai/ryan-adams-albums)
+
+#### - AUTHOR:
 - Kai Kuller = [LinkedIn](www.linkedin.com/in/kai-kuller) || [GitHub](https://github.com/kavakai)
 
 ## [BACK TO THE TOP!](#ryan-adams-albums)
