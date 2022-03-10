@@ -8,14 +8,13 @@ import "./AlbumCard.css";
 
 const PlaylistCard = ({ id, cover }) => {
   
-  const { setSingleAlbum, playlist, setPlaylist, setError } = useContext(RyanContext);
+  const { setSingleAlbum, playlist, setPlaylist } = useContext(RyanContext);
 
   const history = useHistory();
 
-  const handleClick = async (id) => {
-      await getAlbum(id)
-        .then(data => setSingleAlbum(data))
-        .catch(err => setError(err.message))
+  const handleClick = (id) => {
+    getAlbum(id)
+      .then(data => setSingleAlbum(data))
     setTimeout(() => {
       changePage()
     }, 500)
