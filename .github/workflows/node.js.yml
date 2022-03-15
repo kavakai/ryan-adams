@@ -28,7 +28,5 @@ jobs:
         cache: 'npm'
     - name: install packages
       run: npm i
-    - name: Run tests
-      run: npm run cypress
     - name: deploy to heroku
       run: git push heroku main
