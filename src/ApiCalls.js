@@ -1,10 +1,10 @@
 const getRyan = () => {
-  return fetch("https://calm-headland-82293.herokuapp.com/")
+  return fetch("https://ryan-adams-albums.vercel.app/")
     .then(response => checkResponse(response))
 };
 
 const getAlbum = (id) => {
-    return fetch(`https://calm-headland-82293.herokuapp.com/${id}`)
+    return fetch(`https://ryan-adams-albums.vercel.app/${id}`)
         .then(response => checkResponse(response))
 };
 
