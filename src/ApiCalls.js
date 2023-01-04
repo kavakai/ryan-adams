@@ -1,10 +1,10 @@
 const getRyan = () => {
-  return fetch("https://ryan-adams-albums.vercel.app/")
+  return fetch("https://ryan-adams-albums-g9fqkiltm-kavakai.vercel.app/")
     .then(response => checkResponse(response))
 };
 
 const getAlbum = (id) => {
-    return fetch(`https://ryan-adams-albums.vercel.app/${id}`)
+    return fetch(`https://ryan-adams-albums-g9fqkiltm-kavakai.vercel.app/${id}`)
         .then(response => checkResponse(response))
 };
 
